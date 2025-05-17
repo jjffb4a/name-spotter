@@ -1,0 +1,16 @@
+<div class="p-4 bg-white rounded shadow-md space-y-4">
+  <label class="block text-sm font-medium text-gray-700">🔎 Search for a name:</label>
+  <input
+    type="text"
+    class="w-full border rounded px-3 py-2"
+    placeholder="Try Clara, Bob, etc."
+    value={{this.query}}
+    {{on "input" (pick "target.value" (fn (mut this.query)))}}
+  />
+
+  <ul class="space-y-2">
+    {{#each this.filteredNames as |item|}}
+      <li class="p-3 bg-gray-50 rounded border text-sm leading-relaxed" {{html-safe item.html}}></li>
+    {{/each}}
+  </ul>
+</div>
