@@ -1,4 +1,14 @@
 export default [
-  { id: '1', text: 'Alice went to Berlin with Bob and Clara.' },
-  { id: '2', text: 'David and Eva are meeting Frank in Paris.' },
+  {
+    "id": "1",
+    "text": "Alice was spotted in the text."
+  },
+  {
+    "id": "2",
+    "text": "Bob was spotted in the text."
+  },
+  {
+    "id": "3",
+    "text": "Clara was spotted in the text."
+  }
 ];
